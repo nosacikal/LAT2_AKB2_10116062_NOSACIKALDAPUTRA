@@ -7,7 +7,7 @@
     <string name="login">login</string>
     <string name="or">OR</string>
     <string name="facebook">connect with facebook</string>
-    <string name="account">Doesn\'t have an account ?</string>
+    <string name="account">doesn\'t have an account ?</string>
     <string name="register">Register</string>
     <string name="logo">Logo</string>
 
@@ -30,5 +30,10 @@
     <string name="radio_on">Radio On</string>
     <string name="radio_off">Radio Off</string>
     <string name="term">Agree with Terms and Conditions</string>
+
+    <!--Almost There Activity-->
+    <string name="almost_there">Almost There</string>
+    <string name="txt_desc_ad">Thank you for registering with us. One more step, you need to check your email to active account</string>
+    <string name="verify">Verify</string>
 
 </resources>

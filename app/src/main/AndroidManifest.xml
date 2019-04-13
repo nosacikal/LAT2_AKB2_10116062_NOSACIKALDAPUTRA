@@ -17,7 +17,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".Register" />
-        <activity android:name=".AlmostThere"></activity>
+        <activity android:name=".AlmostThere" />
+        <activity android:name=".VerifyAccount"></activity>
     </application>
 
 </manifest>
