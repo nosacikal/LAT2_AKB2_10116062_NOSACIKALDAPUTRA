@@ -11,4 +11,24 @@
     <string name="register">Register</string>
     <string name="logo">Logo</string>
 
+    <!--Register Activity-->
+    <string name="username_hint"><font size="16">Username</font></string>
+    <string name="email"><font size="16">Email</font></string>
+    <string name="phone"><font size="16">Phone Number</font></string>
+    <string name="blood"><font size="16">Blood Type</font></string>
+    <string name="reshus"><font size="16">Reshus</font></string>
+    <string name="password_hint"><font size="16">Password</font></string>
+    <string name="re_password"><font size="16">Retype Password</font></string>
+    <string name="job"><font size="16">Job</font></string>
+    <string name="home_address"><font size="16">Home Address</font></string>
+    <string name="location"><font size="16">Default Location</font></string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="personal">Personal</string>
+    <string name="organization">Organization</string>
+    <string name="back">Back</string>
+    <string name="radio_on">Radio On</string>
+    <string name="radio_off">Radio Off</string>
+    <string name="term">Agree with Terms and Conditions</string>
+
 </resources>
