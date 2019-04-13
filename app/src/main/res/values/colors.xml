@@ -3,4 +3,14 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
+    <color name="light_blue">#43b3e6</color>
+    <color name="light_blue_2">#41B3E6</color>
+    <color name="shadow_header">#d1d2d4</color>
+    <color name="separator">#D1D2D4</color>
+    <color name="font_title">#404041</color>
+    <color name="font_desc">#808284</color>
+    <color name="background">#ffffff</color>
+    <color name="background_invite_friend">#f1f1f2</color>
+    <color name="edit_Text">#949599</color>
+
 </resources>
