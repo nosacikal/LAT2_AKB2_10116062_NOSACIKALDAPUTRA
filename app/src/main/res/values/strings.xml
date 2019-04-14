@@ -57,5 +57,13 @@
     <string name="text_blood_give">blood give</string>
     <string name="text_blood_received">blood received</string>
     <string name="text_thanks">thanks</string>
+    <string name="text_search_donor">Search Donor</string>
+    <string name="text_sd_near">Search donor near you</string>
+    <string name="text_blood_need">Blood Needed</string>
+    <string name="text_bn">4 Users need blood</string>
+    <string name="text_message">Message</string>
+    <string name="sub_message">5 New Message</string>
+    <string name="text_donor_history">Donor History</string>
+    <string name="sub_donor_history">5 Gives, 2 Received</string>
 
 </resources>

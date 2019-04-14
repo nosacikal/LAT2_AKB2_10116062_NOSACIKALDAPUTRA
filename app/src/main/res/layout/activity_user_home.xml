@@ -19,7 +19,7 @@
             <RelativeLayout
                 android:id="@+id/header_user"
                 android:layout_width="match_parent"
-                android:layout_height="130dp"
+                android:layout_height="124dp"
                 android:background="@mipmap/ic_header_profile">
 
                 <ImageView
@@ -57,12 +57,12 @@
 
             <com.mikhaellopez.circularimageview.CircularImageView
                 android:id="@+id/photo_profile"
-                android:layout_width="128dp"
-                android:layout_height="128dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
                 android:layout_below="@id/separator_user"
                 android:layout_centerInParent="true"
                 android:layout_centerHorizontal="true"
-                android:layout_marginTop="-64dp"
+                android:layout_marginTop="-56dp"
                 android:src="@drawable/profile" />
 
             <TextView
@@ -71,10 +71,9 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/photo_profile"
                 android:layout_centerHorizontal="true"
-                android:layout_marginTop="4dp"
                 android:text="@string/nama"
                 android:textColor="@color/light_blue"
-                android:textSize="24sp"
+                android:textSize="22sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -122,7 +121,7 @@
                         android:gravity="center"
                         android:text="@string/text_blood_give_num"
                         android:textColor="@color/light_blue"
-                        android:textSize="32sp"
+                        android:textSize="28sp"
                         android:textStyle="bold" />
 
                     <TextView
@@ -154,7 +153,7 @@
                         android:gravity="center"
                         android:text="@string/text_blood_received_num"
                         android:textColor="@color/light_blue"
-                        android:textSize="32sp"
+                        android:textSize="28sp"
                         android:textStyle="bold" />
 
                     <TextView
@@ -178,7 +177,6 @@
                     android:layout_weight="1"
                     android:orientation="vertical">
 
-
                     <TextView
                         android:id="@+id/text_thanks_num"
                         android:layout_width="match_parent"
@@ -187,7 +185,7 @@
                         android:gravity="center"
                         android:text="@string/text_thanks_num"
                         android:textColor="@color/light_blue"
-                        android:textSize="32sp"
+                        android:textSize="28sp"
                         android:textStyle="bold" />
 
                     <TextView
@@ -214,10 +212,175 @@
                 android:layout_marginTop="8dp"
                 android:background="@color/separator" />
 
+            <LinearLayout
+                android:id="@+id/menu_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/separator_bottom"
+                android:layout_marginTop="16dp"
+                android:baselineAligned="false"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/search"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/img_search"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/text_search_donor"
+                        android:src="@mipmap/ic_search_donor" />
+
+                    <TextView
+                        android:id="@+id/text_search_donor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/text_search_donor"
+                        android:textColor="@color/text"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/text_sd_near"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_light"
+                        android:text="@string/text_sd_near"
+                        android:textColor="@color/text_desc"
+                        android:textSize="12sp"
+                        tools:targetApi="jelly_bean" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/blood_need"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/img_blood_need"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/text_blood_need"
+                        android:src="@mipmap/ic_blood_needed" />
+
+                    <TextView
+                        android:id="@+id/text_blood_need"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/text_blood_need"
+                        android:textColor="@color/text"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/text_bn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_light"
+                        android:text="@string/text_bn"
+                        android:textColor="@color/text_desc"
+                        android:textSize="12sp"
+                        tools:targetApi="jelly_bean" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/menu_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/menu_1"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="24dp"
+                android:baselineAligned="false"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/message"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/img_message"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/text_message"
+                        android:src="@mipmap/ic_message" />
+
+                    <TextView
+                        android:id="@+id/text_message"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/text_message"
+                        android:textColor="@color/text"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/text_sub_message"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_light"
+                        android:text="@string/sub_message"
+                        android:textColor="@color/text_desc"
+                        android:textSize="12sp"
+                        tools:targetApi="jelly_bean" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/donor_history"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/img_donor_history"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/text_donor_history"
+                        android:src="@mipmap/ic_donor_history" />
+
+                    <TextView
+                        android:id="@+id/text_donor_history"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/text_donor_history"
+                        android:textColor="@color/text"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/sub_donor_history"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_light"
+                        android:text="@string/sub_donor_history"
+                        android:textColor="@color/text_desc"
+                        android:textSize="12sp"
+                        tools:targetApi="jelly_bean" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
         </RelativeLayout>
 
     </ScrollView>
-
-
 
 </RelativeLayout>
