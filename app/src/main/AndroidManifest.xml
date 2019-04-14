@@ -18,7 +18,8 @@
         </activity>
         <activity android:name=".Register" />
         <activity android:name=".AlmostThere" />
-        <activity android:name=".VerifyAccount"></activity>
+        <activity android:name=".VerifyAccount" />
+        <activity android:name=".UserHome"></activity>
     </application>
 
 </manifest>

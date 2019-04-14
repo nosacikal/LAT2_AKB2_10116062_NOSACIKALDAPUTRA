@@ -1,9 +1,106 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/light_blue"
+    android:focusableInTouchMode="true"
     tools:context=".VerifyAccount">
 
-</android.support.constraint.ConstraintLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:paddingBottom="60dp"
+        tools:ignore="UselessParent">
+
+        <TextView
+            android:id="@+id/text_verify_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/verify_account"
+            android:textAlignment="center"
+            android:fontFamily="@font/roboto_light"
+            android:textColor="@color/background"
+            android:textSize="34sp"
+            tools:targetApi="jelly_bean" />
+
+        <TextView
+            android:id="@+id/verify_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_verify_account"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:text="@string/verify_desc"
+            android:textColor="@color/background"
+            android:fontFamily="@font/roboto_light"
+            tools:targetApi="jelly_bean" />
+
+        <EditText
+            android:id="@+id/editTextVerify"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/verify_desc"
+            android:layout_marginLeft="26dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginRight="26dp"
+            android:gravity="center"
+            android:fontFamily="@font/roboto_light"
+            android:hint="@string/verify_code"
+            android:inputType="text"
+            android:paddingBottom="20dp"
+            android:textColor="@color/background"
+            android:textColorHint="@color/background"
+            android:textSize="16sp"
+            android:theme="@style/LoginEditText"
+            tools:ignore="Autofill"
+            tools:targetApi="jelly_bean" />
+
+        <Button
+            android:id="@+id/btnSend"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextVerify"
+            android:layout_marginLeft="26dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="26dp"
+            android:background="@drawable/button_style"
+            android:text="@string/send"
+            android:textColor="@color/background" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnSend"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="24dp">
+
+            <TextView
+                android:id="@+id/account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/get_code"
+                android:fontFamily="@font/roboto_light"
+                android:textColor="@color/background"
+                tools:targetApi="jelly_bean" />
+
+            <TextView
+                android:id="@+id/resend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:text="@string/resend"
+                android:textAllCaps="false"
+                android:textColor="@color/background"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -36,4 +36,12 @@
     <string name="txt_desc_ad">Thank you for registering with us. One more step, you need to check your email to active account</string>
     <string name="verify">Verify</string>
 
+    <!--Verify your account-->
+    <string name="verify_account">Verify your Account</string>
+    <string name="verify_desc">We have send verification code to your email</string>
+    <string name="send">Send</string>
+    <string name="get_code">doesn\'t get the code?</string>
+    <string name="resend">Resend</string>
+    <string name="verify_code"><font size="16">enter verification code here…</font></string>
+
 </resources>
