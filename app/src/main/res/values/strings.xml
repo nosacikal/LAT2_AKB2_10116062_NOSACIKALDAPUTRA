@@ -44,4 +44,18 @@
     <string name="resend">Resend</string>
     <string name="verify_code"><font size="16">enter verification code here…</font></string>
 
+
+    <!--User Home Activity-->
+    <string name="header_user">header_user</string>
+    <string name="hamburger_icon">hamburger icon</string>
+    <string name="notif_icon">notif icon</string>
+    <string name="nama">Nosa Cikal D</string>
+    <string name="blood_type">Blood type : B</string>
+    <string name="text_blood_give_num">75</string>
+    <string name="text_blood_received_num">100</string>
+    <string name="text_thanks_num">330</string>
+    <string name="text_blood_give">blood give</string>
+    <string name="text_blood_received">blood received</string>
+    <string name="text_thanks">thanks</string>
+
 </resources>

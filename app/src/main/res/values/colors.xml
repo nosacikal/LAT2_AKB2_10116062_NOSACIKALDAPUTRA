@@ -12,5 +12,8 @@
     <color name="background">#ffffff</color>
     <color name="background_invite_friend">#f1f1f2</color>
     <color name="edit_Text">#949599</color>
+    <color name="text">#000</color>
+    <color name="text_desc">#58585A</color>
+
 
 </resources>

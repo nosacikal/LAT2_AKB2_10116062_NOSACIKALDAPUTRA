@@ -1,9 +1,223 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".UserHome">
 
-</android.support.constraint.ConstraintLayout>
+    <ScrollView
+        android:id="@+id/scroll_user"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        tools:ignore="UselessParent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/header_user"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:background="@mipmap/ic_header_profile">
+
+                <ImageView
+                    android:id="@+id/hamburger_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:contentDescription="@string/hamburger_icon"
+                    android:src="@mipmap/ic_side_menu" />
+
+                <ImageView
+                    android:id="@+id/notif_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:contentDescription="@string/notif_icon"
+                    android:src="@mipmap/ic_notification" />
+
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/separator_user"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_below="@id/header_user"
+                android:background="@color/separator" />
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:id="@+id/photo_profile"
+                android:layout_width="128dp"
+                android:layout_height="128dp"
+                android:layout_below="@id/separator_user"
+                android:layout_centerInParent="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="-64dp"
+                android:src="@drawable/profile" />
+
+            <TextView
+                android:id="@+id/text_nama_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/photo_profile"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="4dp"
+                android:text="@string/nama"
+                android:textColor="@color/light_blue"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text_blood_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_nama_user"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/roboto_light"
+                android:text="@string/blood_type"
+                android:textColor="@color/text"
+                android:textSize="18sp"
+                tools:targetApi="jelly_bean" />
+
+            <View
+                android:id="@+id/separator_top"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/text_blood_type"
+                android:layout_marginTop="8dp"
+                android:background="@color/separator" />
+
+            <LinearLayout
+                android:id="@+id/spec"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/separator_top"
+                android:layout_marginLeft="26dp"
+                android:layout_marginRight="26dp"
+                android:baselineAligned="false"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/blood_give"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/text_blood_give_num"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:gravity="center"
+                        android:text="@string/text_blood_give_num"
+                        android:textColor="@color/light_blue"
+                        android:textSize="32sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/text_blood_give"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_light"
+                        android:gravity="center"
+                        android:text="@string/text_blood_give"
+                        android:textAllCaps="true"
+                        android:textColor="@color/text_desc"
+                        android:textSize="12sp"
+                        tools:targetApi="jelly_bean" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/blood_received"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/text_blood_received_num"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:gravity="center"
+                        android:text="@string/text_blood_received_num"
+                        android:textColor="@color/light_blue"
+                        android:textSize="32sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/text_blood_received"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_light"
+                        android:gravity="center"
+                        android:text="@string/text_blood_received"
+                        android:textAllCaps="true"
+                        android:textColor="@color/text_desc"
+                        android:textSize="12sp"
+                        tools:targetApi="jelly_bean" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/thanks"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/text_thanks_num"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:gravity="center"
+                        android:text="@string/text_thanks_num"
+                        android:textColor="@color/light_blue"
+                        android:textSize="32sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/text_thanks"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_light"
+                        android:gravity="center"
+                        android:text="@string/text_thanks"
+                        android:textAllCaps="true"
+                        android:textColor="@color/text_desc"
+                        android:textSize="12sp"
+                        tools:targetApi="jelly_bean" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/separator_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/spec"
+                android:layout_marginTop="8dp"
+                android:background="@color/separator" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+
+</RelativeLayout>
