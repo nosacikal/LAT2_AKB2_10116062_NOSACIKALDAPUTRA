@@ -15,9 +15,9 @@
     </style>
 
     <style name="RegisterEditText">
-        <item name="colorControlNormal">#939498</item>
-        <item name="colorControlActivated">#939498</item>
-        <item name="colorControlHighlight">#939498</item>
+        <item name="colorControlNormal">#ADAEB2</item>
+        <item name="colorControlActivated">#ADAEB2</item>
+        <item name="colorControlHighlight">#ADAEB2</item>
     </style>
 
 </resources>

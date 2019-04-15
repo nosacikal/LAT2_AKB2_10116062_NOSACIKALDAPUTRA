@@ -40,6 +40,7 @@
                 android:paddingBottom="20dp"
                 android:textColor="@color/background"
                 android:textColorHint="@color/background"
+                android:textSize="16sp"
                 android:theme="@style/LoginEditText"
                 tools:ignore="Autofill" />
 
@@ -55,6 +56,7 @@
                 android:paddingBottom="20dp"
                 android:textColor="@color/background"
                 android:textColorHint="@color/background"
+                android:textSize="16sp"
                 android:theme="@style/LoginEditText"
                 tools:ignore="Autofill" />
 

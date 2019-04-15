@@ -2,8 +2,8 @@
     <string name="app_name">Lat2_AKB2_10116062_NosaCikalDaputra</string>
 
     <!--Login Activity-->
-    <string name="username">Username</string>
-    <string name="password">Password</string>
+    <string name="username"><font size="16">Username</font></string>
+    <string name="password"><font size="16">Password</font></string>
     <string name="login">login</string>
     <string name="or">OR</string>
     <string name="facebook">connect with facebook</string>
